@@ -17,7 +17,7 @@ const Process = () => {
           gsap.to(section, { opacity: 0, duration: 0.5 });
         }
       });
-    }, { threshold: 0.3 });
+    }, { threshold: 0.1 });
 
     sectionObserver.observe(section);
 
@@ -41,19 +41,19 @@ const Process = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className='w-full h-full flex opacity-0 transition-opacity duration-1000'>
+    <section ref={sectionRef} className='w-full h-full flex flex-col md:flex-row opacity-0 transition-opacity duration-1000'>
       {/* Sticky Heading Section */}
-      <div className='sticky grid place-items-center top-0 left-0 h-screen w-1/4 rounded-b-full bg-black p-10 text-white amsterdam font-light tracking-widest'>
-        <p className='text-4xl text-center'>
+      <div className='sticky grid place-items-center top-20 md:top-0 left-0 h-full md:h-screen w-full md:w-1/4 rounded-b-full bg-black p-10 text-white amsterdam font-light tracking-widest z-10'>
+        <p className='text-3xl md:text-4xl text-center'>
           How we bring your<br />
-          <span className='text-[#fde000] text-9xl'> ideas</span> <br /> to <br /> <span className='text-[#fde000] text-9xl'> life</span>
+          <span className='text-[#fde000] text-5xl md:text-9xl'> ideas</span> <br /> to <br /> <span className='text-[#fde000] text-5xl md:text-9xl'> life</span>
         </p>
       </div>
 
       {/* Process Steps */}
-      <div className='flex flex-col gap-10 h-full w-3/4 px-10'>
-        <div className='process-card flex flex-col items-start justify-evenly border border-white py-10 gap-10 px-10 h-[50vh] mt-32'>
-          <div className='flex gap-10'>
+      <div className='flex flex-col gap-10 h-full w-3/4 px-5 md:px-10'>
+        <div className='process-card flex flex-col items-start justify-evenly border border-white py-10 gap-10 px-5 md:px-10 h-full md:h-[50vh] mt-32 sm:w-full'>
+          <div className='flex flex-col md:flex-row gap-10'>
             <div className='text-[#fde000] amsterdam font-bold text-5xl tracking-wide text-nowrap'>01 /</div>
             <div className='text-5xl font-semibold outfit text-white'>Creative Brainstorming & Concepting</div>
           </div>

@@ -15,7 +15,7 @@ const Showcase = () => {
             <Marquee
                 loop={1}
                 autoFill={true}
-                className='sticky top-0 overflow-hidden outfit text-9xl text-[#fddf00a8] font-black'> SHOWCASE <span className='text-[#fddf00cb] text-8xl'>&nbsp;●&nbsp; </span>
+                className='sticky top-0 overflow-hidden outfit text-5xl md:text-9xl text-[#fddf00a8] font-black'> SHOWCASE <span className='text-[#fddf00cb] text-4xl'>&nbsp;●&nbsp; </span>
             </Marquee>
             <br />
             <Marquee
@@ -24,11 +24,11 @@ const Showcase = () => {
                 direction='right'
                 speed={30}
                 className='outfit text-8xl text-[#fddf006c] font-black'>
-                <div className='flex gap-10'>
-                    <img className='ml-20 w-80 h-80 object-cover object-top rounded-3xl' src={image1} alt="" />
-                    <img className='w-80 h-80 object-cover object-top rounded-3xl' src={image2} alt="" />
-                    <img className='w-80 h-80 object-cover object-top rounded-3xl' src={image3} alt="" />
-                    <img className='w-80 h-80 object-cover object-top rounded-3xl' src={image4} alt="" />
+                <div className='flex gap-5 md:gap-10'>
+                    <img className='ml-20 w-60 h-60 md:w-80 md:h-80 object-cover object-top rounded-3xl' src={image1} alt="" />
+                    <img className='w-60 h-60 md:w-80 md:h-80 object-cover object-top rounded-3xl' src={image2} alt="" />
+                    <img className='w-60 h-60 md:w-80 md:h-80 object-cover object-top rounded-3xl' src={image3} alt="" />
+                    <img className='w-60 h-60 md:w-80 md:h-80 object-cover object-top rounded-3xl' src={image4} alt="" />
                 </div>
             </Marquee>
             <br />
@@ -38,11 +38,11 @@ const Showcase = () => {
                 direction='left'
                 speed={30}
                 className='outfit text-8xl text-[#fddf006c] font-black'>
-                <div className='flex gap-10'>
-                    <img className='ml-10 w-80 h-80 object-cover object-top rounded-3xl' src={image5} alt="" />
-                    <img className='w-80 h-80 object-cover object-top rounded-3xl' src={image6} alt="" />
-                    <img className='w-80 h-80 object-cover object-top rounded-3xl' src={image7} alt="" />
-                    <img className='w-80 h-80 object-cover object-top rounded-3xl' src={image8} alt="" />
+                <div className='flex gap-5 md:gap-10'>
+                    <img className='ml-10 w-60 h-60 md:w-80 md:h-80 object-cover object-top rounded-3xl' src={image5} alt="" />
+                    <img className='w-60 h-60 md:w-80 md:h-80 object-cover object-top rounded-3xl' src={image6} alt="" />
+                    <img className='w-60 h-60 md:w-80 md:h-80 object-cover object-top rounded-3xl' src={image7} alt="" />
+                    <img className='w-60 h-60 md:w-80 md:h-80 object-cover object-top rounded-3xl' src={image8} alt="" />
                 </div>
             </Marquee>
 <br />

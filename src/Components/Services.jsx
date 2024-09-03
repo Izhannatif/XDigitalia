@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ServiceCard from './ServiceCard';
 const Services = () => {
     return (
-        <section className='flex flex-col justify-center items-center h-full px-10 py-5'>
+        <section className='flex flex-col justify-center items-center h-full px-2 md:px-10 py-5'>
             <p className='text-left w-full text-7xl text-[#fde000] amsterdam py-10'>What we really do</p>
             
             <ServiceCard
