@@ -5,7 +5,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 200) { // Adjust the scroll threshold as needed
+            if (window.scrollY >= 100) { // Adjust the scroll threshold as needed
                 setNavbarHidden(false);
             } else {
                 setNavbarHidden(true);
@@ -22,21 +22,24 @@ const Navbar = () => {
     }, []);
 
     return (
-        <section className={`navbar h-20 ${navbarHidden ? 'navbar-hidden' : 'navbar-visible'} justify-between text-white font-light text-2xl items-center px-20 bg-[#00000060] backdrop-blur-xl rounded-br-full rounded-bl-full`}>
-            <div className="flex justify-between  gap-10 tracking-wider ">
-                <p>
-                    Home
-                </p>
-                <p>About</p>
-                <p>Services</p>
-            </div>
-            <img className='object-contain w-1/5' src={logo} alt="Logo" />
-            <div className="flex justify-between gap-10">
-                <p>Work</p>
-                <p>Process</p>
-                <p>Contact</p>
-            </div>
-        </section>
+        <>
+            <section className={`navbar h-20 ${navbarHidden ? 'navbar-hidden' : 'navbar-visible'} justify-between text-white font-light text-2xl items-center px-20 bg-[#00000060] backdrop-blur-xl rounded-br-full rounded-bl-full z-10`}>
+                <div className="flex justify-between  gap-10 tracking-wider ">
+                    <p>
+                        Home
+                    </p>
+                    <p>About</p>
+                    <p>Services</p>
+                </div>
+                <img className='object-contain w-1/5' src={logo} alt="Logo" />
+                <div className="flex justify-between gap-10">
+                    <p>Work</p>
+                    <p>Process</p>
+                    <p>Contact</p>
+                </div>
+            </section>
+        </>
+
     );
 };
 

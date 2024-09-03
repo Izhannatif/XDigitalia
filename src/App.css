@@ -22,56 +22,78 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #fddf00bb;
 }
+::selection{
+  background-color: #fddf0052;
+  color: #0a0a0a;
+}
 .outfit{
   font-family: "Outfit", sans-serif !important;
 }
 .amsterdam{
   font-family: "New Amsterdam", sans-serif !important;
 }
+
 body{
   overflow-x: hidden !important;
   padding: 0px !important;
   margin: 0px !important;
 }
 
-/* Navbar container */
 .navbar {
   width: 100%;
-
   display: flex;
   position: fixed;
   top: 0;
   left: 0;
-  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
-  z-index: 10;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 50;
   font-family: "New Amsterdam", sans-serif;
-
 }
 
-/* Hidden state */
 .navbar-hidden {
   opacity: 0;
-  transform: translateY(-100%); /* Hide navbar by moving it out of view */
+  transform: translateY(-100%); 
 }
 
-/* Visible state */
 .navbar-visible {
   opacity: 1;
-  transform: translateY(0); /* Move navbar into view */
+  transform: translateY(0); 
 }
 
 
 body{
-  background: url('./assets/bg-mesh-3.png'), url('./assets/geo-waves.png'),linear-gradient(rgba(0, 0, 0, 0.411), rgba(3, 3, 3, 0.63))  ;
+  background: url('./assets/bg-mesh-3.png'), url('./assets/geo-waves.png'),linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))  ;
   background-repeat: no-repeat;
-  background-size: cover,cover,contain;
+  background-size: cover,cover,cover;
   background-blend-mode:  overlay,overlay;
+  background-attachment: fixed,fixed,fixed;
 }
 
-.lander-text-bg{
-  background-image: url('./assets/text-bg-mesh.png');
-  background-clip: text;
-  color: transparent !important;
-  /* filter: brightness(50); */
-  text-shadow: 10px 10px 30px rgba(110, 110, 110, 0.144);
+.contact-spinner text {
+  fill: white !important;
+  letter-spacing: 0.8px;
+  font-size: 1rem;
 }
+
+.spinner-arrow {
+  z-index: 200;
+  transition: transform 0.5s ease; /* Ensure smooth transition */
+}
+
+.spinner-arrow:hover {
+  transform: rotate(135deg); /* Use transform instead of rotate */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  animation: spin 7s linear infinite;
+}
+
