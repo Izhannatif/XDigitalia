@@ -4,17 +4,23 @@
 @tailwind utilities;
 
 /* width */
+html{
+  background: #000;
+}
 ::-webkit-scrollbar {
   width: 10px;
+  background-color: transparent;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  
+  background: #0a0a0a00;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
+  border-radius: 20px;
   background: #fddf0050;
 }
 
@@ -33,10 +39,12 @@
   font-family: "New Amsterdam", sans-serif !important;
 }
 
+
 body{
   overflow-x: hidden !important;
   padding: 0px !important;
   margin: 0px !important;
+  scroll-behavior: smooth !important;
 }
 
 .navbar {

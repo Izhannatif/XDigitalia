@@ -8,7 +8,8 @@ import image5 from '../assets/portfolio/5.png'
 import image6 from '../assets/portfolio/6.png'
 import image7 from '../assets/portfolio/7.png'
 import image8 from '../assets/portfolio/8.png'
-
+import {motion} from 'framer-motion'
+import { GoArrowUpRight } from 'react-icons/go'
 const Showcase = () => {
     return (
         <section className='h-full w-full py-10'>
@@ -45,7 +46,11 @@ const Showcase = () => {
                     <img className='w-60 h-60 md:w-80 md:h-80 object-cover object-top rounded-3xl' src={image8} alt="" />
                 </div>
             </Marquee>
-<br />
+            <br />
+            <motion.div className=' my-5 group w-full flex justify-center items-center text-center text-2xl py-5 font-semibold text-black outfit bg-[#fde000] hover:tracking-widest duration-300 gap-2 hover:gap-5'>
+                <p>Explore Portfolio </p>
+                <span><GoArrowUpRight className='h-8 w-8 text-[#fde000] bg-black rounded-full p-1 group-hover:rotate-45 duration-300' /></span>
+            </motion.div>
         </section>
     )
 }

@@ -13,11 +13,13 @@
     "blotter": "^2.1.0",
     "framer-motion": "^11.3.31",
     "gsap": "^3.12.5",
+    "locomotive-scroll": "^4.1.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-fast-marquee": "^1.6.5",
     "react-icons": "^5.3.0",
     "react-intersection-observer": "^9.13.0",
+    "smooth-scrollbar": "^8.8.4",
     "three": "^0.168.0"
   },
   "devDependencies": {
@@ -32,6 +34,7 @@
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
     "postcss": "^8.4.41",
+    "sass-embedded": "^1.78.0",
     "tailwindcss": "^3.4.10",
     "vite": "^5.4.1"
   }
